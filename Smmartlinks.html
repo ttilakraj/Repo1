@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Smart Links</title>
+    </head>
+    
+<body>
+<a href="" id="ser">Hover!</a><br>
+<a href="" id="hvr">Hover!</a><br>
+<a href="" id="hvr">Click!</a><br>
+<a href="" id="ovr">Click!</a><br>
+<script>
+ document.getElementById("ser").onmouseover=function() {func()};
+  function func(){
+    document.getElementById("ser").innerHTML="Welcome!";
+  }
+  document.getElementById("hvr").onmouseout=function() {func1()};
+  function func1(){
+    document.getElementById("hvr").innerHTML="Welcome!";
+  }
+  document.getElementById("clk").onclick=function() {func2()};
+  function func2(){
+    document.getElementById("clk").innerHTML="Welcome!";
+  }
+  const ovr=document.getElementById('ovr');
+  ovr.addEventListener('mouseover',function func3(){
+    ovr.style.color='yellow';
+  });
+</script>
+</body>
+</html>
